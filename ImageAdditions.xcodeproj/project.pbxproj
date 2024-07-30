@@ -18,7 +18,7 @@
 		9A12A805138888890029554D /* CKImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A12A7F6138888890029554D /* CKImageAdditions.h */; };
 		9A12A806138888890029554D /* CoreGraphicsAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A12A7F7138888890029554D /* CoreGraphicsAdditions.c */; };
 		9A12A807138888890029554D /* CoreGraphicsAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A12A7F7138888890029554D /* CoreGraphicsAdditions.c */; };
-		9A12A808138888890029554D /* CoreGraphicsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A12A7F8138888890029554D /* CoreGraphicsAdditions.h */; };
+		9A12A808138888890029554D /* CoreGraphicsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A12A7F8138888890029554D /* CoreGraphicsAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A12A809138888890029554D /* UIImage+ImageBlending.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A12A7F9138888890029554D /* UIImage+ImageBlending.h */; };
 		9A12A80A138888890029554D /* UIImage+ImageBlending.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A12A7FA138888890029554D /* UIImage+ImageBlending.m */; };
 		9A12A80B138888890029554D /* UIImage+ImageBlending.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A12A7FA138888890029554D /* UIImage+ImageBlending.m */; };
@@ -178,8 +178,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A12A805138888890029554D /* CKImageAdditions.h in Headers */,
 				9A12A808138888890029554D /* CoreGraphicsAdditions.h in Headers */,
+				9A12A805138888890029554D /* CKImageAdditions.h in Headers */,
 				9A12A809138888890029554D /* UIImage+ImageBlending.h in Headers */,
 				9A12A80C138888890029554D /* UIImage+ImageColoring.h in Headers */,
 				9A12A80F138888890029554D /* UIImage+ImageResizing.h in Headers */,
@@ -241,6 +241,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 9A12A7BD138884D00029554D;
@@ -367,8 +368,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/ImageAdditions.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -378,8 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/ImageAdditions.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

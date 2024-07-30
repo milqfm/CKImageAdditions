@@ -39,6 +39,9 @@ typedef struct Pixel { uint8_t r, g, b, a; } Pixel;
 #pragma mark -
 #pragma mark Contexts
 
+CGContextRef CKBitmapContextAndDataCreate(CGSize size, void ** data);
+CGContextRef CKBitmapContextAndDataCreateWithImage(CGImageRef image, void ** data);
+
 CGContextRef CKBitmapContextCreate(CGSize size) {
 	return CKBitmapContextAndDataCreate(size, NULL);
 }
